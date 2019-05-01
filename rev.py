@@ -127,13 +127,13 @@ if True:
             for i in gpsStringArray:                                                        #Print string all strings received from GPS
                 print (chr(i),end='')
 
-            print('\n')
-            print("Latitude = ",gps_struct.gpsLatitude)                                     #GPS latitude
-            print("Longitude = ",gps_struct.gpsLongitude)                                   #GPS longitude
-            print("Direction E/W = ",(gps_struct.gpsDirection_EW).decode("utf-8"))          #Direction East/West
-            print("Direction N/S = ",(gps_struct.gpsDirection_NS).decode("utf-8"))          #Direction North/South
-            print("No. of satellite locked = ",gps_struct.gpsSatLock)                       #GPS satellite lock
-            print("No. of satellite fixed = ",gps_struct.gpsSatFix)                         #GPS satellite fix
+           
+           #print("Latitude = ",gps_struct.gpsLatitude)                                     #GPS latitude
+           # print("Longitude = ",gps_struct.gpsLongitude)                                   #GPS longitude
+            #print("Direction E/W = ",(gps_struct.gpsDirection_EW).decode("utf-8"))          #Direction East/West
+            #print("Direction N/S = ",(gps_struct.gpsDirection_NS).decode("utf-8"))          #Direction North/South
+            #print("No. of satellite locked = ",gps_struct.gpsSatLock)                       #GPS satellite lock
+            #print("No. of satellite fixed = ",gps_struct.gpsSatFix)                         #GPS satellite fix
             
 
 
@@ -144,14 +144,14 @@ if True:
             print(gpsLatitude2,gpsLongitude2)
 
 
-
+ print('\n')
 lat1= radians(gpsLatitue1)
 lon1= radians(gpsLongitude1)
 lat2  =  radians(gpsLatitue1)
 lon2= radians(gpsLongitude2)
 
 
-radius = 3959 # km  3959
+radius = 3959 # m  3959
 
 dlat = math.radians(lat2-lat1)
 dlon = math.radians(lon2-lon1)
